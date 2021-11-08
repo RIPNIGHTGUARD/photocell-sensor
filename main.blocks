@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="r71w}a@{2g/2Bzc{_y@O">Photocell Sensor</variable></variables><block type="device_forever" id="i~wc)MRX|x:Cq80aYsvd" x="225" y="20"><statement name="HANDLER"><block type="variables_set" id=".tCv8Zwp,b*.vVk#n1@%"><field name="VAR" id="r71w}a@{2g/2Bzc{_y@O">Photocell Sensor</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="]_hk6zp7C,CvR!znF@2["><field name="name">AnalogPin.P0</field></block></value><next><block type="device_show_number" id=".c`ewZkshCtMp$_aL1c:"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="-VBrEunn~*:,Rr?:Hd_8"><field name="VAR" id="r71w}a@{2g/2Bzc{_y@O">Photocell Sensor</field></block></value><next><block type="controls_if" id="+!SeoYLk6]7AhdD#Z?:@"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="ZF3}Re`W7!21rhlw_GiZ"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="_-T4#@LuHDi]omF9O.8@"><field name="VAR" id="r71w}a@{2g/2Bzc{_y@O">Photocell Sensor</field></block></value><value name="B"><shadow type="math_number" id="F!HFZ?jC1Oc$kH|nbW%F"><field name="NUM">250</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="1GpnOWEcL,!b,n?i(96R"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="=LsnN=%YJ^~I@|[n~qao"><field name="LEDS">`
+        . . . . # 
+        . . . # # 
+        . . # # . 
+        . # # . . 
+        # # . . .
+        `</field></block></statement></block></next></block></next></block></statement></block></xml>
